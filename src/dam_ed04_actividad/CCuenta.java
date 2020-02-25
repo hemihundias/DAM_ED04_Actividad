@@ -28,10 +28,10 @@ public class CCuenta {
      /**
      * Constructor para la clase CCuenta
      * 
-     * @param nom
-     * @param cue
-     * @param sal
-     * @param tipo
+     * @param nom nombre del títular
+     * @param cue número cuenta
+     * @param sal estado de cuenta
+     * @param tipo interés
      */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
@@ -43,7 +43,7 @@ public class CCuenta {
     
     /**
      * @param nom nombre set
-     * @see setNombre()
+     * 
      */
     public void asignarNombre(String nom)
     {
@@ -52,7 +52,7 @@ public class CCuenta {
     
     /**
      * @return cuenta
-     * @see getNombre()
+     * 
      */
     public String obtenerNombre()
     {
@@ -61,7 +61,7 @@ public class CCuenta {
 
     /**
      * @return saldo
-     * @see getSaldo()
+     * 
      */
     public double estado()
     {
@@ -70,8 +70,8 @@ public class CCuenta {
 
     /**
      * Método que usaremos para ingresar una cantidad en la cuenta
-     * @param cantidad
-     * @throws java.lang.Exception
+     * @param cantidad elemento tipo double
+     * @throws java.lang.Exception se generará en caso de introducir un número negativo
      */
     public void ingresar(double cantidad) throws Exception
     {
@@ -82,8 +82,8 @@ public class CCuenta {
     
     /**
      * Método que usaremos para retirar una cantidad de la cuenta
-     * @param cantidad
-     * @throws java.lang.Exception
+     * @param cantidad elemento tipo double
+     * @throws java.lang.Exception se generará en caso de introducir un número negativo
      */
     public void retirar(double cantidad) throws Exception
     {
